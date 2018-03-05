@@ -26,14 +26,14 @@
 
 	map.on('load', function() {
 		
-		map.addSource('ft30', {
+		map.addSource('comb0305', {
 			'type': 'geojson',
-			'data': '/susmap/fairtrade30.geojson'
+			'data': '/susmap/combined0305.geojson'
 		});
 		map.addLayer({
-        	'id': 'ft30Layer',
+        	'id': 'comb0305Layer',
         	'type': 'circle',
-        	'source': 'ft30',
+        	'source': 'comb0305',
         	'layout': {
         		'visibility': 'visible'
         	}

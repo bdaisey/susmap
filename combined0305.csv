@@ -1,0 +1,68 @@
+susid,category,name,addy1,addy2,city,state,zip,lat,lon,phone,website,industry
+100001,fairtrade,"Mayorga Organics, LLC.",BWI,Concourse A/B,Baltimore,MD,21240,39.179945,-76.671562,(410) 859-1966,https://mayorgaorganics.com/,"Cafe, Coffee Shop"
+100002,fairtrade,Peregrine Espresso,660 Pennsylvania Ave SE,,Washington,DC,20003,38.885148,-76.996409,202-629-4381,http://peregrineespresso.com/,"Cafe, Coffee Shop"
+100003,fairtrade,Peregrine Espresso,1718 14th St NW,,Washington,DC,20009,38.913294,-77.03219,202-525-5127,http://peregrineespresso.com/,"Cafe, Coffee Shop"
+100004,fairtrade,Peregrine Espresso,1309 5th St NE,,Washington,DC,20002,38.908433,-76.997232,202-543-5459,http://peregrineespresso.com/,"Cafe, Coffee Shop"
+100005,fairtrade,Ten Thousand Villages,"915 King St, Alexandria, VA",,Alexandria,VA,22314,38.8127321,-77.0497694,(703) 684-1435,https://www.tenthousandvillages.com/alexandria#fndtn-home,"Crafts, Housewares, Gift shop"
+100006,fairtrade,"Trade Roots, Fair Trade Gift and Coffee Shop",5852 Washington Blvd,,Arlington,VA,22205,38.885117,-77.1436747,(571) 335-4274,https://www.fairtraderoots.com/,"Gift Shop, Cafe, Coffee Shop, Accessories, Jewelry, Home Decor"
+100007,fairtrade,Fair Trade Winds,2920 District Ave,#160,Fairfax,VA,22031,38.871162,-77.2327288,(703) 877-0577,https://www.fairtradewinds.net/,"Gift Shop, Crafts, Clothing"
+100008,fairtrade,Indus Imports,1213 King Street,,Alexandria,VA,22314,38.8059868,-77.0550833,(703) 349-1115,https://indusimports.wordpress.com/,"Rugs, Clothing, Crafts, Art"
+100009,fairtrade,Qualia Coffee,3917 Georgia Ave NW ,,Washington,DC,20011,38.9391872,-77.02673,(202) 248-6423,https://www.qualiacoffee.com/,"Coffee Roaster, Coffee Shop, Cafe"
+100010,fairtrade,Qualia Coffee,Eckington Pl NE & Harry Thomas Way NE,,Washington,DC,20002,38.910581,-77.0071257,(202) 248-6424,https://www.qualiacoffee.com/,"Coffee Roaster, Coffee Shop, Cafe"
+100011,fairtrade,Compass Coffee,1921 8th St NW,#100,Washington,DC,20001,38.9162901,-77.0248554,(202) 838-3139,http://www.compasscoffee.com/,"Coffee Roaster, Coffee Shop, Cafe, Artisan Brews"
+100012,fairtrade,Compass Coffee,1535 7th St NW,,Washington,DC,20001,38.9105847,-77.0237647,(202) 838-3139,http://www.compasscoffee.com/,"Coffee Roaster, Coffee Shop, Cafe, Artisan Brews"
+100013,fairtrade,Compass Coffee,801 Mt Vernon Pl NW,,Washington,DC,20001,38.9071422,-77.0267261,,http://www.compasscoffee.com/,"Coffee Roaster, Coffee Shop, Cafe, Artisan Brews"
+100014,fairtrade,Compass Coffee,1401 Eye St NW,,Washington,DC,20005,38.9016789,-77.0410546,(202) 838-3139,http://www.compasscoffee.com/,"Coffee Roaster, Coffee Shop, Cafe, Artisan Brews"
+100015,fairtrade,Compass Coffee,1776 I St NW,,Washington,DC,20006,38.9016783,-77.0410546,(202) 838-3139,http://www.compasscoffee.com/,"Coffee Roaster, Coffee Shop, Cafe, Artisan Brews"
+100016,fairtrade,Compass Coffee,650 F St NW,,Washington,DC,20004,38.8971514,-77.0210724,(202) 838-3139,http://www.compasscoffee.com/,"Coffee Roaster, Coffee Shop, Cafe, Artisan Brews"
+100017,fairtrade,Yes! Organic Market,3425 Connecticut Ave NW,,Washington,DC,20008,38.9351654,-77.0599436,(202) 363-1559,http://www.yesorganicmarket.com/,"Grocery, Supermarket, Market"
+100018,fairtrade,Yes! Organic Market,4100 Georgia Ave NW,,Washington,DC,20011,38.9121801,-77.0482763,(202) 291-5790,http://www.yesorganicmarket.com/,"Grocery, Supermarket, Market"
+100019,fairtrade,Yes! Organic Market,3809 12th St NE,,Washington,DC,20017,38.936808,-76.9927712,(202) 832-7715,http://www.yesorganicmarket.com/,"Grocery, Supermarket, Market"
+100020,fairtrade,Yes! Organic Market,1825 Columbia Rd NW,,Washington,DC,20009,38.92178,-77.0458907,(202) 462-2069,http://www.yesorganicmarket.com/,"Grocery, Supermarket, Market"
+100021,fairtrade,Yes! Organic Market,2123 14th St NW,,Washington,DC,20009,38.9185218,-77.0403521,(202) 232-6603,http://www.yesorganicmarket.com/,"Grocery, Supermarket, Market"
+100022,fairtrade,Yes! Organic Market,410 8th St SE,,Washington,DC,20003,38.8833919,-76.9969561,(202) 546-4325,http://www.yesorganicmarket.com/,"Grocery, Supermarket, Market"
+100023,fairtrade,Pua Naturally,701 Pennsylvania Ave NW,,Washington,DC,20004,38.894404,-77.022079,(202) 347-4543,https://www.puanaturally.com/,"Clothing, Upscale, Women's Clothing, Jewelery, Accessories"
+100024,fairtrade,Urban Dwell,1837 Columbia Rd NW,,Washington,DC,20009,38.921561,-77.04398,(202) 558-9087,http://www.urbandwelldc.com/,"Home Decor, Kitchen & Bath, Fashion"
+100025,fairtrade,Cost Plus World Market,5335 Wisconsin Ave NW,,Washington,DC,20015,38.960603,-77.084701,(202) 244-8720,https://www.worldmarket.com/,"Home Decor, Beer and Wine, Chocolate, Tea, Coffee, Furniture, Art"
+100026,fairtrade,Cost Plus World Market,1301 South Joyce Street,Suite D22,Arlington,VA,22202,38.862861,-77.063345,(703) 415-7575,https://www.worldmarket.com/,"Home Decor, Beer and Wine, Chocolate, Tea, Coffee, Furniture, Art"
+100027,fairtrade,Cost Plus World Market,3532 S Jefferson St,,Falls Church,VA,22041,38.848775,-77.120434,(703) 933-2100,https://www.worldmarket.com/,"Home Decor, Beer and Wine, Chocolate, Tea, Coffee, Furniture, Art"
+100028,fairtrade,The Potter's House,1658 Columbia Rd NW,,Washington ,DC,20009,38.92498,-77.03869,(202) 232-5483,http://pottershousedc.org/,"Coffee and Tea, Bookstore, Cafe, Community Events"
+100029,fairtrade,Brilliant Earth,3332 Cady's Alley NW,,Washington ,DC,20007,38.9046031,-77.0691692,(202) 448-9055,https://www.brilliantearth.com/our-movement/,"Jewelry, Engagement Rings, Diamonds"
+100030,fairtrade,Middle East Books and More,1902 18 St NW,,Washington ,DC,20009,38.9158356,-77.044128,(202) 939-6050,https://www.middleeastbooks.com/,"Bookstore, Toys, Kitchen, Bath Products"
+100031,fairtrade,Kashmir Imports,50 Massachusetts Ave NE,,Washington ,DC,20002,38.8980977,-77.0090044,(202) 789-8880,http://www.kashmirboutiques.com/,"Clothing, Upscale, Women's Clothing, Jewelery, Accessories"
+100032,certbcorp,Divine Chocolate,804 E St. SE,2nd Floor,Washington,DC,20003,38.88288,-76.994575,(202) 332-8913,http://www.divinechocolate.com/us/,Food/Drink
+100033,certbcorp,City First Bank,1432 U St. NW,,Washington,DC,20009,38.917087,-77.033287,(202) 243-7100,cityfirstbank.com,Finance
+100034,certbcorp,Threespot Media,806 7th St NW,#201,Washington,DC,20001,38.900404,-77.022093,(202) 471-1000,https://www.threespot.com/,Marketing
+100035,certbcorp,SoapBox Soaps,33rd St NW,Suite 250,Washington,DC,20007,38.904775,-77.065747,(347) 762-7269,https://www.soapboxsoaps.com/,Health/Beauty
+100036,certbcorp,Climate Advisers,1320 19th St NW,Suite 400,Washington,DC,20036,38.90834,-77.043704,(202) 350-4950,https://www.climateadvisers.com/,Policy Consulting
+100037,certbcorp,EdOps,1611 Connecticut Ave NW,#200,Washington,DC,20009,38.911902,-77.044204,(202) 352-7878,ed-ops.com,Business Management Consulting
+100038,certbcorp,Global Policy Solutions LLC,1300 L St NW,#975,Washington,DC,20005,38.903678,-77.030092,(202) 265-5111,globalpolicysolutions.com,Policy Consulting
+100039,certbcorp,Network for Good,1140 Connecticut Ave NW,#700,Washington,DC,20036,38.905188,-77.041181,(888) 284-7978,networkforgood.com,Software
+100040,certbcorp,Raffa P.C.,1899 L St NW,#850,Washington,DC,20036,38.904233,-77.043099,(202) 822-5000,https://www.raffa.com/pages/default.aspx,Finance
+100041,certbcorp,CleanChoice Energy,1055 Thomas Jefferson St NW,#650,Washington,DC,20007,38.904034,-77.059693,(800) 460-4900,cleanchoiceenergy.com,Utilities
+100042,certbcorp,PROVOC,1327 14th St NW,,Washington,DC,20005,38.908403,-77.03154,(202) 518-6808,provoc.me,Marketing
+100043,certbcorp,Arabella Advisors,1201 Connecticut Ave NW,#300,Washington,DC,20036,38.906289,-77.040752,(202) 595-1020,arabellaadvisors.com,Philanthropic Advising
+100044,certbcorp,TechChange,2001 13th St NW,,Washington,DC,20009,38.917415,-77.029278,,https://www.techchange.org/,Technology Education
+100045,certbcorp,Telesis Corporation,1122 21st St NE,,Washington,DC,20002,38.905324,-76.974745,(202)388-3342,telesiscorp.com,Architecture
+100046,certbcorp,HEX Ferments,529 E Belvedere Ave,Belvedere Square,Baltimore,MD,21212,39.363889,-76.608611,(410) 775-5044,https://www.hexferments.com/,Food/Drink
+100047,vegan,Turning+Natural,1380 H St NE,,Washington,DC,20002,38.9003654,-76.9879034,(202) 800-8828,turningnatural.com,Restaurant
+100048,vegan,Vegaritos,6904 4th St NW,,Washington,DC,20012,38.9739154,-77.0204339,(202) 882-8988,vegaritos.com,Restaurant
+100049,vegan,NuVegan Café,2928 Georgia Ave NW,,Washington,DC,20001,38.9278199,-77.0256592,(202) 232-1700,nuvegancafe.com,Restaurant
+100050,vegan,HipCityVeg, 712 7th St NW,,Washington,DC,20001,38.8989514,-77.0242601,202-621-8057,hipcityveg.com,Restaurant
+100051,vegan,Soupergirl,314 Carroll St NW,,Washington,DC,20012,38.974832,-77.0191347,(202) 609-7177,thesoupergirl.com,Restaurant
+100052,vegan,Elizabeth's Gone Raw,1341 L St NW,,Washington,DC,20005,38.904019,-77.031248,202-347-8349,elizabethsgoneraw.com,Restaurant
+100053,vegan,Evolve Vegan Restaurant,341 Cedar St NW,,Washington,DC,20012,38.9749363,-77.020216,(202) 882-8999,evolveveganrestaurant.com,Restaurant
+100054,vegan,Fare Well,406 H St NE,,Washington,DC,20002,38.900336,-77.0023307,(202) 367-9600,eatfarewell.com,Restaurant
+100055,vegan,Fruitive,1094 Palmer Alley NW,,Washington,DC,20001,38.900255,-77.0290117,(202) 836-7749,fruitive.com,Restaurant
+100056,vegan,Khepra's Raw Food Juice Bar,402 H St NE,,Washington,DC,20002,38.9004319,-77.0024459,(202) 803-2063,kheprasrawfoodjuicebar.com,Restaurant
+100057,vegan,NuVegan Café,2928 Georgia Ave NW,,Washington,DC,20001,38.9278199,-77.0256592,(202) 232-1700,nuvegancafe.com,Restaurant
+100058,vegan,Puree Artisan Juice Bar,5255 Loughboro Rd NW,,Washington,DC,20016,38.960557,-77.1443108,(202) 660-5632,pureejuicebar.com,Restaurant
+100059,vegan,Senbeb Cafe,6224 3rd St NW,,Washington,DC,20011,38.9657189,-77.0186156,(202) 249-0917,senbebcafe.com,Restaurant
+100060,vegan,Shouk,655 K St NW,,Washington,DC,20001,38.9027111,-77.0228385,(202) 652-1464,shouk.com,Restaurant
+100061,vegan,Soupergirl,"1829 M St NW,",,Washington,DC,20036,38.9058197,-77.0450409,(202) 733-4401,thesoupergirl.com,Restaurant
+100062,vegan,Sticky Fingers Bakery,"1370 Park Rd NW,",,Washington,DC,20010,38.9304647,-77.0339925,(202) 299-9700,stickyfingersbakery.com,Restaurant
+100063,vegan,The Juice Laundry,1331 4th St SE,Ste 104,Washington,DC,20003,38.4536546,-78.304979,(202) 813-3679,thejuicelaundry.com,Restaurant
+100064,crueltyfree,Wholefoods,1440 P St NW,,Washington,DC,20005,38.9738944,-77.088286,(202) 332-4300,wholefoodsmarket.com,Grocery
+100065,crueltyfree,Wholefoods,2201 I St NW,,Washington,DC,20037,38.9738526,-77.0882862,(202) 296-1660,wholefoodsmarket.com,Grocery
+100066,crueltyfree,Wholefoods,600 H St NE,,Washington,DC,20002,38.9737688,-77.0882866,(202) 469-7410,wholefoodsmarket.com,Grocery
+100067,crueltyfree,Wholefoods,4530 40th St NW,,Washington,DC,20016,38.973727,-77.0882869,(202) 237-5800,wholefoodsmarket.com,Grocery
