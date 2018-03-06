@@ -6,14 +6,18 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel='stylesheet' type='text/css' href='susmapstyle.css' />
+    <!--
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
     </style>
+    -->
 </head>	
-<body>
 
-<div id='map'></div>
+<body>
+    <div class='sidebar pad2'>Organizations</div>
+    <div id='map' class='map pad2'></div>
 <script>
 
 	mapboxgl.accessToken = 'pk.eyJ1IjoiYmRhaXNleSIsImEiOiJjamMxMjdieDEwMXA0MnFvOTBwc3BzaDdlIn0.5SxQWde6wFYzvqiPI0573w';
@@ -31,13 +35,14 @@
 			'data': '/combined0305.geojson'
 		});
 		map.addLayer({
-        	'id': 'comb0305Layer',
-        	'type': 'circle',
+        	'id': 'organizations',
+        	'type': 'symbol',
         	'source': 'comb0305',
         	'layout': {
-        		'visibility': 'visible'
+        		'visibility': 'visible',
+                'icon-image': 'garden-15',
+                'icon-allow-overlap': true,
         	}
-
 		});
 	});
 
