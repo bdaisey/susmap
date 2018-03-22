@@ -4,6 +4,7 @@
 	<meta charset='utf-8' />
     <title>Sustainable DC</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.0/mapbox-gl.css' rel='stylesheet' />
     <link rel='stylesheet' type='text/css' href='susmapstyle.css' />
@@ -16,10 +17,35 @@
 </head>	
 
 <body>
-    <div class='sidebar pad2'>Organizations</div>
-    <div id='map' class='map pad2'></div>
+    <div class='sidebar'>
+        <div class='heading'>
+            <h1>Organizations</h1>
+        </div>
+        <div id='listings' class='listings'></div>
+    </div>
+    <div id='map' class='map'></div>
 <script>
-
+    // for older browsers to use the remove() function
+    if (!('remove' in Element.prototype)) {
+        Element.prototype.remove = function() {
+            if (this.parentNode) {
+                this.parentNode.removeChild(this);
+            }
+        };
+    }
+    
+    // ajax call with jquery to load geojson of all organizations
+    var orgs = $.ajax({
+        url:'combined0305.geojson',
+        dataType: 'json',
+        success: console.log("Organizations successfully loaded!"),
+        error: function(xhr) {
+            alert(xhr.statusText)
+        }
+    })
+    
+    
+    // setup map and load data points
 	mapboxgl.accessToken = 'pk.eyJ1IjoiYmRhaXNleSIsImEiOiJjamMxMjdieDEwMXA0MnFvOTBwc3BzaDdlIn0.5SxQWde6wFYzvqiPI0573w';
 	var map = new mapboxgl.Map({
 		container: 'map',
@@ -30,23 +56,127 @@
 
 	map.on('load', function() {
 		
-		map.addSource('comb0305', {
+		/*  map.addSource('comb0305', {
 			'type': 'geojson',
-			'data': '/combined0305.geojson'
-		});
+			'data': 'combined0305.geojson'
+		});  */
 		map.addLayer({
         	'id': 'organizations',
         	'type': 'symbol',
-        	'source': 'comb0305',
+        	'source': {
+                'type': 'geojson',
+                'data': 'combined0305.geojson'
+            },
         	'layout': {
         		'visibility': 'visible',
                 'icon-image': 'garden-15',
                 'icon-allow-overlap': true,
         	}
 		});
+        
+        // load list of orgs into sidebar
+        buildLocationList(orgs.responseJSON);
 	});
-
-
+    
+    map.on('click', function(e) {
+        var features = map.queryRenderedFeatures(e.point, {
+            layers: ['organizations']
+        });
+        
+        if (features.length) {
+            var clickedPoint = features[0];
+            // 1. Fly to the point
+            flyToPoint(clickedPoint);
+            
+            // 2. Close all other popups and display popup for clicked point
+            createPopUp(clickedPoint);
+            
+            // 3. Highlight listing in sidebar and remove highlights for other listings
+            var activeItem = document.getElementsByClassName('active');
+            if (activeItem[0]) {
+                activeItem[0].classList.remove('active');
+            }
+            
+            var selectedFeature = clickedPoint.properties.susid;
+            
+            var orgsJSON = orgs.responseJSON
+            for (var i = 0; i < orgsJSON.features.length; i++) {
+                if(orgsJSON.features[i].properties.susid === selectedFeature) {
+                    selectedFeatureIndex = i;
+                }
+            }
+            
+            var listing = document.getElementById('listing-' + selectedFeatureIndex);
+            listing.classList.add('active');
+            
+        }
+    });
+    
+    function flyToPoint(currentFeature) {
+        map.flyTo({
+            center: currentFeature.geometry.coordinates,
+            zoom: 15
+        });
+    }
+    
+    function createPopUp(currentFeature) {
+        var popUps = document.getElementsByClassName('mapboxgl-popup');
+        if (popUps[0]) popUps[0].remove();
+        
+        var popUp = new mapboxgl.Popup({closeOnClick: false})
+            .setLngLat(currentFeature.geometry.coordinates)
+            .setHTML('<h3>' + currentFeature.properties.name + '</h3>' +
+                    '<h4>Category: ' + currentFeature.properties.category + '</h4>' +
+                    '<h4><a href="' + currentFeature.properties.website + '" target="_blank">' + 'Click for Website!</a></h4>' +
+                    '<h4>Industry: ' + currentFeature.properties.industry + '</h4>')
+            .addTo(map);
+    }
+    
+    
+    
+    // build list of organizations for the sidebar
+    function buildLocationList(data) {
+        for (i = 0; i < data.features.length; i++) {
+            var currentFeature = data.features[i];
+            // shorten to 'prop' to avoid typing currentFeature.properties
+            var prop = currentFeature.properties;
+            // select 'listings' container in HTML and append a div for each org
+            var listings = document.getElementById('listings');
+            var listing = listings.appendChild(document.createElement('div'));
+            listing.className = 'item';
+            listing.id = 'listing-' + i;
+            // create a new link with the class 'title' for each org, fill with address
+            var link = listing.appendChild(document.createElement('a'));
+            link.href = '#';
+            link.className = 'title';
+            link.dataPosition = i;
+            link.innerHTML = prop.name;
+            
+            // create a new div with the class 'details' for each org
+            var details = listing.appendChild(document.createElement('div'));
+            details.innerHTML = prop.addy1 + prop.addy2; 
+            details.innerHTML += ' &middot; ' + prop.city;
+            if (prop.phone) {
+                details.innerHTML += ' &middot; ' + prop.phone;
+            }
+            
+            link.addEventListener('click', function(e) {
+                // update the currentFeature to the org associated with clicked link
+                var clickedListing = data.features[this.dataPosition];
+                
+                flyToPoint(clickedListing);
+                createPopUp(clickedListing);
+                
+                var activeItem = document.getElementsByClassName('active');
+                
+                if (activeItem[0]) {
+                    activeItem[0].classList.remove('active');
+                }
+                this.parentNode.classList.add('active');
+            });
+        }
+    }
+    
 </script>
 </body>
 </html>
